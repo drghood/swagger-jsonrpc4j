@@ -44,7 +44,7 @@ or
 http://localhost:8080/v3/api-docs
 ```
 
-## 3 Use swagger-ui
+# 3. Use swagger-ui
 
 ```url
 http://localhost:8080/swagger-ui.html
