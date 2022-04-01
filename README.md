@@ -54,5 +54,5 @@ http://localhost:8080/swagger-ui.html
 
 ## 4. Extension & Reference
 
-The [swagger-bootstrap-ui](https://github.com/xiaoymin/swagger-bootstrap-ui) contains swagger ui extension.
-The [swagger-api](https://github.com/swagger-api/swagger-core) contains annotation documentation, samples etc.
+The [swagger-bootstrap-ui](https://github.com/xiaoymin/swagger-bootstrap-ui) contains swagger ui extension.  
+The [swagger-api](https://github.com/swagger-api/swagger-core) contains annotation documentation, samples etc.  
