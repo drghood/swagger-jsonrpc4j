@@ -50,7 +50,7 @@ public class Swagger2Configuration extends WebMvcConfigurationSupport {
 	public Docket api(ApiInfo info) {
 		List<Response> responses = new ArrayList<>();
 		return new Docket(DocumentationType.OAS_30).apiInfo(info)
-				// 设置默认responses，只需要 status=200的responses，其他都不需要
+				// default responses，status=200 responses
 				.globalResponses(HttpMethod.GET, responses).globalResponses(HttpMethod.POST, responses)
 				.globalResponses(HttpMethod.PUT, responses).globalResponses(HttpMethod.DELETE, responses)
 				.globalResponses(HttpMethod.HEAD, responses).globalResponses(HttpMethod.OPTIONS, responses)
