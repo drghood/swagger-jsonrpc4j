@@ -5,12 +5,10 @@ package com.demo.dtos;
  */
 public class RpcException extends RuntimeException {
 	/**
-	 *
 	 */
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * 业务异常返回码
 	 */
 	private String code;
 
