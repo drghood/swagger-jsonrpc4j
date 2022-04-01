@@ -1,6 +1,8 @@
-# 1. Coding work
+# swagger-jsonrpc4j
 
-## 1.1 Swagger @Api annotation on @JsonRpcService annotated Service
+## 1. Coding work
+
+### 1.1 Swagger @Api annotation on @JsonRpcService annotated Service
 
 ```java
     @Api("sample")
@@ -8,7 +10,7 @@
     public class DemoApi{}
 ```
 
-## 1.2 Swagger @ApiOperation annotation on @JsonRpcMethod annotated Method
+### 1.2 Swagger @ApiOperation annotation on @JsonRpcMethod annotated Method
 
 ```java
 @Api("sample")
@@ -22,7 +24,7 @@ public class DemoApi{
 }
 ```
 
-## 1.3 Swagger @ApiModel,@ApiModelProperty etc. on Models and Fields
+### 1.3 Swagger @ApiModel,@ApiModelProperty etc. on Models and Fields
 
 ```java
 @ApiModel
@@ -34,7 +36,7 @@ public class DemoRequest {
 }
 ```
 
-# 2. Use swagger OAS
+## 2. Use swagger OAS
 
 ```url
 http://localhost:8080/v2/api-docs
@@ -44,8 +46,13 @@ or
 http://localhost:8080/v3/api-docs
 ```
 
-# 3. Use swagger-ui
+## 3. Use swagger-ui
 
 ```url
 http://localhost:8080/swagger-ui.html
 ```
+
+## 4. Extension & Reference
+
+The [swagger-bootstrap-ui](https://github.com/xiaoymin/swagger-bootstrap-ui) contains swagger ui extension.
+The [swagger-api](https://github.com/swagger-api/swagger-core) contains annotation documentation, samples etc.
