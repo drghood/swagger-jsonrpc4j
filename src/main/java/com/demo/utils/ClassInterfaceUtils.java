@@ -13,11 +13,18 @@ public class ClassInterfaceUtils {
 	public static Class<?> findAnnotatedType(Class<?> targetType, Class<? extends Annotation> annotationType) {
 		Class<?> annoClass = null;
 		if (!targetType.isAnnotationPresent(annotationType)) {
-			List<Class<?>> supClasses = ClassUtils.getAllInterfaces(targetType);
+			List<Class<?>> supClasses = ClassUtils.getAllSuperclasses(targetType);
 			for (Class<?> sc : supClasses) {
 				if (sc.isAnnotationPresent(annotationType)) {
 					annoClass = sc;
-					break;
+					return annoClass;
+				}
+			}
+			List<Class<?>> supInterfaces = ClassUtils.getAllInterfaces(targetType);
+			for (Class<?> sc : supInterfaces) {
+				if (sc.isAnnotationPresent(annotationType)) {
+					annoClass = sc;
+					return annoClass;
 				}
 			}
 		} else {
